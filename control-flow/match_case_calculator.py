@@ -3,19 +3,19 @@ num2 = int(input("Enter the second number:"))
 operation_type = input("Choose the operation (+, -, *, /):")
 
 match operation_type:
-        case '+':
+        case "+":
             result = num1+num2
             print ("The result is ",result)
         
-        case '-':
+        case "-":
             result = num1-num2
             print("The result is ", result) 
 
-        case '*':
+        case "*":
             result = num1*num2
             print("The result is ",result) 
 
-        case '/':
+        case "/":
             if num1 or num2 == 0:
                 print("Cannot divide by zero.")
 
