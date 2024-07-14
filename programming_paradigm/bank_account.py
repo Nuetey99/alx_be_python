@@ -3,11 +3,11 @@ class BankAccount:
         self.current_balance = initial_balance
         
     
-    def deposit(self, amount):
+    def deposit (self , amount):
         self.current_balance = amount + self.current_balance
         return self.current_balance
     
-    def withdraw(self,amount):
+    def withdraw (self , amount):
         if self.current_balance >= amount:
             self.current_balance = amount - self.current_balance
             return True
