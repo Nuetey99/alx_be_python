@@ -25,7 +25,7 @@ class Library:
     def Add_Book(self,book):
         self.books.append(book)
 
-    def Check_Out_Book(self,title):
+    def Check_Out_Book ( self , title ):
         for book in self.books:
             if book.title == title and book.is_available():
                 book.check_out()
@@ -34,7 +34,7 @@ class Library:
                 print(f"Book {title} has been checked out or does not exist.")
 
     
-    def Return_Book(self,title):
+    def Return_Book ( self , title ):
         for book in self.books:
             if book.title == title and not book.is_available():
                 book.return_book()
